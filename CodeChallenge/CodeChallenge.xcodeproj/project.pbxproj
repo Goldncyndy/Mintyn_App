@@ -16,6 +16,8 @@
 		B4D4446527DBC66D00426FBC /* Extension+SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4446427DBC66D00426FBC /* Extension+SignInViewController.swift */; };
 		B4D4446727DBC70400426FBC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4446627DBC70400426FBC /* HomeViewController.swift */; };
 		B4D4446B27DC178300426FBC /* Extension+HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4446A27DC178300426FBC /* Extension+HomeViewController.swift */; };
+		B4D4446F27DC189E00426FBC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4446E27DC189E00426FBC /* SettingsViewController.swift */; };
+		B4D4447127DC19E900426FBC /* TabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4447027DC19E900426FBC /* TabsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		B4D4446427DBC66D00426FBC /* Extension+SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+SignInViewController.swift"; sourceTree = "<group>"; };
 		B4D4446627DBC70400426FBC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B4D4446A27DC178300426FBC /* Extension+HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+HomeViewController.swift"; sourceTree = "<group>"; };
+		B4D4446E27DC189E00426FBC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		B4D4447027DC19E900426FBC /* TabsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				B4D4446427DBC66D00426FBC /* Extension+SignInViewController.swift */,
 				B4D4446627DBC70400426FBC /* HomeViewController.swift */,
 				B4D4446A27DC178300426FBC /* Extension+HomeViewController.swift */,
+				B4D4446E27DC189E00426FBC /* SettingsViewController.swift */,
+				B4D4447027DC19E900426FBC /* TabsViewController.swift */,
 			);
 			path = CodeChallenge;
 			sourceTree = "<group>";
@@ -151,8 +157,10 @@
 				B4D4446B27DC178300426FBC /* Extension+HomeViewController.swift in Sources */,
 				B4D4445527DBC02E00426FBC /* SignInViewController.swift in Sources */,
 				B4D4445127DBC02E00426FBC /* AppDelegate.swift in Sources */,
+				B4D4447127DC19E900426FBC /* TabsViewController.swift in Sources */,
 				B4D4446527DBC66D00426FBC /* Extension+SignInViewController.swift in Sources */,
 				B4D4445327DBC02E00426FBC /* SceneDelegate.swift in Sources */,
+				B4D4446F27DC189E00426FBC /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

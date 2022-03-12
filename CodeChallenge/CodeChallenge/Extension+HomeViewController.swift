@@ -12,7 +12,8 @@ extension HomeViewController {
   // MARK: - FUNCTION TO SETUP VIEWS ON SCREEN
   func setupViewsConstraint() {
     view.addSubview(instructionLabel)
-    view.addSubview(userImageView)
+    userCardView.addSubview(userImageView)
+    view.addSubview(userCardView)
     view.addSubview(cardView)
     cardView.addSubview(walletLabel)
     cardView.addSubview(balanceLabel)
@@ -32,11 +33,18 @@ extension HomeViewController {
     navigationController?.navigationBar.isHidden = true
     
     NSLayoutConstraint.activate([
-      instructionLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50),
+      instructionLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 30),
       instructionLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
-      userImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50),
-      userImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
-      userImageView.widthAnchor.constraint(equalToConstant: 60),
+      // MARK: - USER PROFILE IMAGE CONSTRAINT
+      userCardView.topAnchor.constraint(equalTo:  view.safeAreaLayoutGuide.topAnchor, constant: 30),
+      userCardView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
+      userCardView.widthAnchor.constraint(equalToConstant: 65),
+      userCardView.heightAnchor.constraint(equalToConstant: 65),
+      // MARK: IMAGE CONSTRAINT
+      userImageView.topAnchor.constraint(equalTo: userCardView.topAnchor, constant: 5),
+      userImageView.leadingAnchor.constraint(equalTo: userCardView.leadingAnchor, constant: 2),
+      userImageView.trailingAnchor.constraint(equalTo: userCardView.trailingAnchor, constant: -2),
+      userImageView.widthAnchor.constraint(equalToConstant: 65),
       userImageView.heightAnchor.constraint(equalToConstant: 65),
       // MARK: - VIEW CONSTRAINTS
       cardView.topAnchor.constraint(equalTo: userImageView.bottomAnchor, constant: 30),

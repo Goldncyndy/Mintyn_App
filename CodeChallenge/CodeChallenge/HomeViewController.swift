@@ -19,13 +19,24 @@ class HomeViewController: UIViewController {
     return label
   }()
   
+  // MARK: - CARD VIEW
+  let userCardView: UIView = {
+    let view = UIView()
+    view.backgroundColor = .orange
+    view.layer.cornerRadius = 50.0
+    view.isUserInteractionEnabled = true
+    view.translatesAutoresizingMaskIntoConstraints = false
+    return view
+  }()
+  
   // MARK: - IMAGE VIEW
   lazy var userImageView: UIImageView = {
     let imageView = UIImageView()
     imageView.image = UIImage(named: "profile2")
-    imageView.contentMode = .scaleAspectFit
-    imageView.layer.cornerRadius = 30.0
+    imageView.layer.cornerRadius = 15.0
     imageView.clipsToBounds = true
+    imageView.frame = userCardView.bounds
+    imageView.contentMode = .scaleAspectFill
     imageView.translatesAutoresizingMaskIntoConstraints = false
     return imageView
   }()
@@ -34,7 +45,7 @@ class HomeViewController: UIViewController {
   let cardView: UIView = {
     let view = UIView()
     view.backgroundColor = .orange
-    view.layer.cornerRadius = 15
+    view.layer.cornerRadius = 25.0
     view.isUserInteractionEnabled = true
     view.translatesAutoresizingMaskIntoConstraints = false
     return view

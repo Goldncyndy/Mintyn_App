@@ -176,7 +176,7 @@ class SignInViewController: UIViewController {
       validationLabel.textColor = .red
       validationLabel.text = "Please enter a valid email"
     } else {
-      let newController = HomeViewController()
+      let newController = TabsViewController()
       navigationController?.pushViewController(newController, animated: true)
     }
     if passwordTextField.text == "" {
@@ -185,11 +185,12 @@ class SignInViewController: UIViewController {
         passwordTextField.layer.borderColor = UIColor.red.cgColor
     } else {
         signInButton.isEnabled = true
-      navigationController?.pushViewController(HomeViewController(), animated: true)
+      navigationController?.pushViewController(TabsViewController()
+, animated: true)
     }
   }
   @objc func didTapSignUpButton() {
-    let newController = HomeViewController()
+    let newController = TabsViewController()
     navigationController?.pushViewController(newController, animated: true)
   }
   @objc func didTapPasswordVisibilityButton() {
